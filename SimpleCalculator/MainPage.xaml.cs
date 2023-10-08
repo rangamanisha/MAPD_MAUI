@@ -66,7 +66,7 @@
             operatorMath = btnPressed;
         }
 
-        /*void onCalculate(object sender, EventArgs e)
+        void onCalculate(object sender, EventArgs e)
         {
             if (currentState == 2)
             {
@@ -76,7 +76,7 @@
                 firstNum = result;
                 currentState = -1;
             }
-        }*/
+        }
 
 
     }

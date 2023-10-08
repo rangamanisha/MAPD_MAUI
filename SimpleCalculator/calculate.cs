@@ -1,15 +1,29 @@
 namespace SimpleCalculator;
 
-public class calculate : ContentPage
+public static class Calculate
 {
-	public calculate()
-	{
-		Content = new VerticalStackLayout
-		{
-			Children = {
-				new Label { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, Text = "Welcome to .NET MAUI!"
-				}
-			}
-		};
-	}
+   public static double DoCalculation(double val1, double val2, string operatorMath)
+    {
+        double result = 0;
+
+        switch (operatorMath)
+        {
+            case "/":
+                result = val1/val2; 
+                break;
+                case "-":
+                result = val2 - val1;
+                break;
+                case "*":
+                result = val1 * val2;
+                break;
+            case "+":
+                result = val1 + val2;
+                break;
+            default:
+                break;
+        }
+
+        return result;
+    }
 }
